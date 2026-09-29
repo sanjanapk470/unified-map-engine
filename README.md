@@ -1,9 +1,3 @@
-Your `README.md` is already in solid shape, but since we just resolved the database container architecture by introducing `Dockerfile.db` and shifting to a **100% automated single-command setup**, we should update the setup instructions and architecture details to match.
-
-Here are the specific updates needed:
-
----
-
 ### Key Updates Needed
 
 1. **Prerequisites & Setup:** Update Step 1 under `🚀 Getting Started` to highlight `docker-compose up -d --build` (mentioning `Dockerfile.db` handles PostGIS + pgvector automatically).
@@ -167,13 +161,5 @@ Returns a unified GeoJSON payload of saved and discovered venues within a given 
 | `latitude` | `float` | User's current latitude coordinate |
 | `longitude` | `float` | User's current longitude coordinate |
 | `radius_meters` | `int` | Search radius in meters (e.g., `1000`) |
-
-```
-
----
-
-Now your documentation reflects the single-command `--build` setup. 
-
-Ready to create `main.py` and kick off the FastAPI backend routes?
 
 ```
