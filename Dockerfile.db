@@ -1,0 +1,4 @@
+FROM pgvector/pgvector:pg16
+
+# Pre-install PostGIS at build time
+RUN apt-get update && apt-get install -y postgresql-16-postgis-3 && rm -rf /var/lib/apt/lists/*

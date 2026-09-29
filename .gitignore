@@ -1,0 +1,11 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables (sensitive keys/passwords)
+.env
+
+# Model caches & IDE configs
+.vscode/
+.DS_Store
